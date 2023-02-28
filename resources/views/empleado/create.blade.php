@@ -1,6 +1,7 @@
 Formulario de creacion de empleado
 //Enviar fotografias o archivos
-<form action="" method="post" enctype="multipart/form-data">
+<form action="{{ url('/empleado') }}" method="post" enctype="multipart/form-data">
+@csrf
 
 <label for="Nombre">Nombre</label>
 <input type="text" name="Nombre" id="Nombre"><br>
@@ -17,6 +18,6 @@ Formulario de creacion de empleado
 <label for="Foto">Foto</label>
 <input type="file" name="Foto" id="Foto"><br>
 
-<input type="submit" name="Enviar" id="Enviar" ><br>
+<input type="submit" ><br>
 
 </form>
